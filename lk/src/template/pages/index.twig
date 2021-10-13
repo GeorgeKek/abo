@@ -1,0 +1,19 @@
+{% extends "../layouts/layout.twig" %}
+
+{% block main %}
+	<div class="wrapper">
+		{% include "../blocks/sidebar.twig" %}
+		<div class="main">
+			{% include "../blocks/top-bar.twig" %}
+			<div class="workspace">
+				<div class="workspace__left">
+					{% include "../blocks/tasks.twig" %}
+				</div>
+				<div class="workspace__right">
+					{% include "../blocks/stats.twig" %}
+					{% include "../blocks/task-stats.twig" %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

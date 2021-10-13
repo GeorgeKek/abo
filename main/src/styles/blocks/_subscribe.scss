@@ -1,0 +1,157 @@
+.subscribe
+{
+	background-image: url('../img/subscribe-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.subscribe__main
+{
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 78px;
+	padding-left: 165px;
+	padding-right: 165px;
+}
+.subscribe__logo
+{
+	margin-bottom: 20px;
+}
+h3.subscribe__title
+{
+	font-family: $bold;
+	font-size: 24px;
+	line-height: 34px;
+	color: #FFFFFF;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.subscribe__descr
+{
+	font-family: $regular;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+	&:not(:last-child)
+	{
+		margin-bottom: 10px;
+	}
+}
+.subscribe__form
+{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	margin-bottom: 10px;
+}
+.subscribe__input
+{
+	border: none;
+	outline: none;
+	border-radius: 8px 0 0 8px;
+	background-color: #fff;
+	padding: 18px 25px;
+	font-family: $semi;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	text-align: center;
+	&::placeholder
+	{
+		color: rgba(0, 0, 0, 0.1);
+	}
+}
+input.subscribe__submit
+{
+	max-width: 187px;
+	box-sizing: border-box;
+	font-family: $semi;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: left;
+	color: #fff;
+	padding: 22px 36px;
+	padding-right: 66px;
+	background-color: #FFAE00;
+	border-radius: 0 8px 8px 0;
+	border: none;
+	outline: none;
+	transition: 0.3s;
+	&:hover
+	{
+		background-color: #FF9900;
+		transition: 0.3s;
+	}
+}
+.subscribe__label
+{
+	position: relative;
+	&:after
+	{
+		content: "";
+		position: absolute;
+		width: 10px;
+		height: 16px;
+		right: 24px;
+		top: 50%;
+		transform: translateY(-50%);
+		background-image: url('../img/arrow-right.svg');
+	}
+}
+
+@media (max-width: 1140px)
+{
+	.subscribe__main
+	{
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+}
+
+@media (max-width: 1024px)
+{
+	.subscribe__main
+	{
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width: 768px)
+{
+	.subscribe__main
+	{
+		padding-bottom: 120px;
+	}
+	.subscribe__form
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+	.subscribe__input
+	{
+		box-sizing: border-box;
+		width: 284px;
+		border-radius: 8px 8px 0 0;
+		margin-bottom: 5px;
+	}
+	.subscribe__label
+	{
+		width: 284px;
+		&:after
+		{
+			display: none;
+		}
+	}
+	input.subscribe__submit
+	{
+		max-width: 284px;
+		width: 100%;
+		border-radius: 0 0 8px 8px;
+		padding-right: 36px;
+		text-align: center;
+	}
+}
